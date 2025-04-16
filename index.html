@@ -92,8 +92,77 @@
             <hr>
             <section>
                 <h3 id="unrelated">Unrelated</h3>
-                <form action="https://youtu.be/dQw4w9WgXcQ?si=VBOtFqtq4bZhV8ek" method="get">
-                    <label>Kittens <input type="checkbox" name="q"></label>
+                <label for="today_date">Today's Date:</label>
+                <input
+                    type="date"
+                    id="today_date"
+                    name="present_date"
+                    min="2025-01-01"
+                    max="2025-12-31" />
+                <form action="https://youtu.be/xvFZjo5PgG0?si=-UVn0a7DM6Bs_erJ">
+                    <br>
+                    <fieldset>
+                        <legend>Two Truths and a Lie: What are my truths?</legend>
+                        <label>I won a Rubik's Cube Competition <input type="checkbox"></label><br>
+                        <label>I got into an accident the day I got my license. <input type="checkbox"></label><br>
+                        <label>I can play the guitar.<input type="checkbox" name="q"></label>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>What is your favorite cereal?</legend>
+                        <label>Enter here: <input type="text"></label>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>What is the best restaurant at UCSD?</legend>
+                        <input type="radio" id="panda1" name="restaurant">
+                        <label for="panda1">Panda Express</label>
+                        <br>
+                        <input type="radio" id="panda2" name="restaurant">
+                        <label for="panda2">Panda Express</label>
+                        <br>
+                        <input type="radio" id="panda3" name="restaurant">
+                        <label for="panda3">Panda Express</label>
+                        <br>
+                        <input type="radio" id="panda" name="restaurant">
+                        <label for="panda4">Panda Express</label>
+                        <br>
+                        <br>
+                        <label>Please explain your choice:</label><br>
+                        <textarea id="explaination" rows="5" cols="33"></textarea>
+                        <br>
+                        <br>
+                        <label>Select the best food item from your restaurant's menu:</label>
+                        <br>
+                        <select>
+                            <option value="">--Please choose food item--</option>
+                            <option value="orange-chicken">Orange Chicken</option>
+                            <option value="honey-walnut">Honey Walnut Shrimp</option>
+                            <option value="beijing-beef">Beijing Beef</option>
+                            <option value="honey-sesame">Honey Sesame Chicken</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label>Rate this food item using the scale:</label>
+                        <input type="range" list="ticks" min="0" max="10"/>
+                        <datalist id="ticks">
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                            <option value="6"></option>
+                            <option value="7"></option>
+                            <option value="8"></option>
+                            <option value="9"></option>
+                            <option value="10"></option>
+                        </datalist>
+                        <br>
+
+                    </fieldset>
+                    <br>
+                    <button class="rick-roll" type="submit">Win a $50 gift card to your favorite restaurant!</button>
                 </form>
             </section>
         </main>
