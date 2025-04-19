@@ -1,4 +1,24 @@
+/* Variable Declarations */
+:root {
+    --main-header-color: #b4311a;
+    --sub-header-color: dodgerblue;
+}
+
+/* Body Rules */
+body {
+    font-family: Montserrat;
+}
+
+/* Heading Rules*/
 h1 {
-    color: dodgerblue
-    
+    color: var(--main-header-color);
+    background-color: rgb(255, 255, 255);
+}
+
+h2 {
+    color: var(--main-header-color);
+}
+
+h3 {
+    color: var(--sub-header-color);
 }
