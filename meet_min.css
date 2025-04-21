@@ -13,20 +13,27 @@ body {
 /* Heading Rules*/
 .header-title {
     color: var(--main-header-color, #b4311a);
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     margin: 0px 0px 0px 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vh;
+    padding-right: 1vh
+    
+}
+#header_box {
+    border: 5px solid var(--main-header-color)
 }
 
 h3 {
     color: var(--sub-header-color, dodgerblue);
-    margin: 10px 0 1em;
-    padding: 1;
+    margin: 10px 0 0 0;
+    padding: 3px 10px 3px 20px;
     font-size: 1.2em;
 }
 
+/* Paragraph Rules */
 p {
     margin-left: 1em;
     text-indent: 1em;
