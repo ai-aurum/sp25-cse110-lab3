@@ -24,23 +24,23 @@
             </div>
             <h3>Jump to:</h3>
             <nav>
-                <ul>
-                    <li><a href="#attendlist">Attendance List</a></li>
-                    <li><a href="#agenda">Today's Agenda</a></li>
-                    <li><a href="#unfinishedtasks">Unfinsihed Tasks</a></li>
-                    <li><a href="#newtasks">New Tasks</a></li>
-                    <li><a href="#misc">Miscellaneous</a></li>
-                    <li><a href="#diagrams">Diagrams Presented</a></li>
-                    <li><a href="#record">Recordings</a></li>
-                    <li><a href="#unrelated">Unrelated</a></li>
+                <ul id="nav-section">
+                    <li><a href="#attendlist-title">1) Attendance List</a></li>
+                    <li><a href="#agenda">2) Today's Agenda</a></li>
+                    <li><a href="#unfinishedtasks">3) Unfinsihed Tasks</a></li>
+                    <li><a href="#newtasks">4) New Tasks</a></li>
+                    <li><a href="#misc">5) Miscellaneous</a></li>
+                    <li><a href="#diagrams">6) Diagrams Presented</a></li>
+                    <li><a href="#record">7) Recordings</a></li>
+                    <li><a href="#unrelated">8) Unrelated</a></li>
                 </ul>
             </nav>
             <hr>
         </header>
         <main>
             <div>
-                <h3 id="attendlist">Attendance List:</h3>
-                <ul>
+                <h3 id="attendlist-title">Attendance List:</h3>
+                <ul id="attendlist">
                     <li><input type="checkbox"> Person 1</li>
                     <li><input type="checkbox"> Person 2</li>
                     <li><input type="checkbox"> Person 3</li>
@@ -87,7 +87,7 @@
             </section>
             <section>
                 <h3 id="diagrams">Diagrams Presented:</h3>
-                <img style="display: block; margin: auto" src="automata_diag.png" alt="State Diagram of even-lengthed binary string">
+                <img style="display: block; margin: auto; width: 50vw; max_width:90vw" src="automata_diag.png" alt="State Diagram of even-lengthed binary string">
                 <p><i>State Diagaram that accepts even-length binary strings</i></p>
             </section>
             <hr>
@@ -116,7 +116,7 @@
                     <fieldset id="two-truths-lie">
                         <legend>Two Truths and a Lie: What are my truths?</legend>
                         <label>I won a Rubik's Cube Competition <input type="checkbox"></label><br>
-                        <label>I got into an accident the day I got my license. <input type="checkbox"></label><br>
+                        <label>I pulled a muscle doing push ups. <input type="checkbox"></label><br>
                         <label>I can play the guitar.<input type="checkbox" name="q"></label>
                     </fieldset>
                     <br>
@@ -125,19 +125,19 @@
                         <label>Enter here: <input type="text"></label>
                     </fieldset>
                     <br>
-                    <fieldset>
+                    <fieldset id="best-restaurant">
                         <legend>What is the best restaurant at UCSD?</legend>
                         <input type="radio" id="panda1" name="restaurant">
-                        <label for="panda1">Panda Express</label>
+                        <label class="panda-name" for="panda1">Panda Express</label>
                         <br>
-                        <input type="radio" id="panda2" name="restaurant">
-                        <label for="panda2">Panda Express</label>
+                        <input class="panda-name" type="radio" id="panda2" name="restaurant">
+                        <label class="panda-name" for="panda2">Panda Express</label>
                         <br>
                         <input type="radio" id="panda3" name="restaurant">
-                        <label for="panda3">Panda Express</label>
+                        <label class="panda-name" for="panda3">Panda Express</label>
                         <br>
                         <input type="radio" id="panda4" name="restaurant">
-                        <label for="panda4">Panda Express</label>
+                        <label class="panda-name" for="panda4">Panda Express</label>
                         <br>
                         <br>
                         <label>Please explain your choice:</label><br>
