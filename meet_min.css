@@ -8,22 +8,30 @@
 body {
     font-family: Montserrat;
     background-color: hsl(0deg, 0%, 95%);
+    border-color: color(srgb 50% 50% 50%);
+    border-style: double;
+    border-width: 10px;
+    border-radius: 1%
 }
 
 /* Heading Rules*/
 .header-title {
     color: var(--main-header-color, #b4311a);
-    background-color: rgb(255, 255, 255);
+    background-color: color-mix(in lab, red 5%, green 3%);
     text-align: center;
     margin: 0px 0px 0px 0px;
     padding-top: 1vh;
     padding-bottom: 1vh;
     padding-left: 1vh;
-    padding-right: 1vh
-    
+    padding-right: 1vh;
 }
+
 #header_box {
-    border: 5px solid var(--main-header-color)
+    border: 5px solid var(--main-header-color);
+    border-radius: 1%;
+    width: auto;
+    min-width: 50em;
+    max-width: 1920px;
 }
 
 h3 {
@@ -31,10 +39,22 @@ h3 {
     margin: 10px 0 0 0;
     padding: 3px 10px 3px 20px;
     font-size: 1.2em;
+    text-decoration: underline;
 }
 
 /* Paragraph Rules */
 p {
     margin-left: 1em;
     text-indent: 1em;
+    text-align: center;
+    height: auto;
+}
+
+#rick-roll {
+    display: none;
+}
+
+#media {
+    display: block;
+    margin: auto;
 }
