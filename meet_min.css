@@ -10,10 +10,6 @@
 body {
     font-family: Montserrat;
     background-color: hsl(0deg, 0%, 95%);
-    border-color: color(srgb 50% 50% 50%);
-    border-style: double;
-    border-width: 10px;
-    border-radius: 1%;
 }
 
 * {
@@ -35,7 +31,7 @@ body {
 #header_box {
     border: 5px solid var(--main-header-color);
     border-radius: 1%;
-    width: auto;
+    width: 100vw;
     min-width: 1vw;
     max-width: 100vw;
     position: sticky;
@@ -55,7 +51,7 @@ h3 {
 /* Attendance list */
 #attendlist {
     display: flex;
-    gap: 35vw;
+    gap: 10%;
 }
 
 /* Navigation Bar */
@@ -68,7 +64,8 @@ h3 {
 
 #nav-section li {
     color: var(--sub-header-color);
-    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* Paragraph Rules */
@@ -115,6 +112,7 @@ label[for="panda1"]{
     margin: auto;
     max-width: 20em
 }
+
 
 /* Media Queries */
 @media (max-width: 100vw) {

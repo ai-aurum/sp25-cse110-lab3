@@ -22,6 +22,7 @@
                 <h2>*Meeting Section/Topic*</h2>
                 <h2>Date: 4/20/2025</h2>
             </div>
+            <hr>
             <h3>Jump to:</h3>
             <nav>
                 <ul id="nav-section">
@@ -87,19 +88,29 @@
             </section>
             <section>
                 <h3 id="diagrams">Diagrams Presented:</h3>
-                <img style="display: block; margin: auto; width: 50vw; max_width:90vw" src="automata_diag.png" alt="State Diagram of even-lengthed binary string">
+                <img style="display: block; 
+                            margin: auto; 
+                            width: 50vw; 
+                            max_width: 90vw;
+                            border-color: color(srgb 50% 50% 50%);
+                            border-style: double;
+                            border-width: 10px;
+                            border-radius: 1%;"
+                            src="automata_diag.png" alt="State Diagram of even-lengthed binary string">
                 <p><i>State Diagaram that accepts even-length binary strings</i></p>
             </section>
             <hr>
             <section>
                 <h3 id="record">Recordings:</h3>
-                <details>
-                    <summary>CLICK HERE BEFORE PLAYING</summary>
-                    The video and audio were undoubtedly recorded simultaneously.
-                </details>
-                <video id="media" src="video_record.mp4" controls width="500"></video>
-                <br>
-                <audio id="media" src="audio_record.m4a" controls></audio>
+                <div class="recording-media">
+                    <details>
+                        <summary>CLICK HERE BEFORE PLAYING</summary>
+                        The video and audio were undoubtedly recorded simultaneously.
+                    </details>
+                    <video id="media" src="video_record.mp4" controls width="500"></video>
+                    <br>
+                    <audio id="media" src="audio_record.m4a" controls></audio>
+                </div>
             </section>
             <hr>
             <section>
