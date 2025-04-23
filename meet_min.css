@@ -30,6 +30,7 @@ body {
 #header_box {
     border: 5px solid var(--main-header-color);
     border-radius: 1%;
+    border-style: dashed;
     width: 100vw;
     max-width: calc(var(--viewport-width));
     position: static;
@@ -114,9 +115,10 @@ label[for="panda1"]{
 #media {
     display: block;
     margin: auto;
-    max-width: 20em
+    max-width: 30em;
+    width: 50vw;
+    min-width: 20em;
 }
-
 
 legend, label {
     font-weight: bold;
