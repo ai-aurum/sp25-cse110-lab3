@@ -61,11 +61,6 @@ h3 {
     grid-template-rows: repeat(2, 4em);
     justify-items: center;
     padding-left: 0;
-    & li {
-        margin-left: 0px;
-        margin-right: 0px;
-        font-size: 0.45cm;
-    }
 }
 
 
