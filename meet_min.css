@@ -2,7 +2,7 @@
 :root {
     --main-header-color: #b4311a;
     --sub-header-color: dodgerblue;
-    --button-hover-color: rgb(92, 173, 240);
+    --button-hover-color: color(display-p3 1 0.5 1);
     --button-active-color: green;
     --viewport-width: 98vw;
 }
@@ -128,13 +128,20 @@ legend, label {
 }
 
 fieldset legend {
-    color: color-mix(in lab, red 10%, green 100%);;
+    color: color-mix(in oklab, red 10%, green 100%);;
 }
 
-div.recording-media details > summary {
+details > summary {
     text-align: center;
+}
+
+details {
     color: red;
-    font-weight: bold;
+    text-align: center;
+    & summary {
+        font-weight: bold;
+        font-size: 1.1em;
+    }
 }
 
 img ~ p {
