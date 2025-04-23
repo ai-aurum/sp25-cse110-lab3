@@ -4,7 +4,7 @@
     --sub-header-color: dodgerblue;
     --button-hover-color: rgb(92, 173, 240);
     --button-active-color: green;
-    --viewport-width: 98vw
+    --viewport-width: 98vw;
 }
 
 /* Body Rules */
@@ -17,7 +17,7 @@ body {
 /* Heading Rules*/
 .header-title {
     color: var(--main-header-color, #b4311a);
-    background-color: color-mix(in lab, red 6%, green 3%);
+    background-color: var(--main-header-bg-color);
     text-align: center;
     margin: 0px 0px 0px 0px;
     padding-top: 1vh;
@@ -61,7 +61,7 @@ h3 {
     grid-template-rows: repeat(2, 4em);
     justify-items: center;
     padding-left: 0;
-    li {
+    & li {
         margin-left: 0px;
         margin-right: 0px;
         font-size: 0.45cm;
@@ -128,7 +128,7 @@ legend, label {
 }
 
 fieldset legend {
-    color: green;
+    color: color-mix(in lab, red 10%, green 100%);;
 }
 
 div.recording-media details > summary {
